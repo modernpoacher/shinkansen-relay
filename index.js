@@ -1,3 +1,3 @@
-require('babel-register') // ({ ignore: /!(react-steam\/lib)/ })
+require('babel-register')
 
 module.exports = require('./lib')
