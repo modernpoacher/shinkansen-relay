@@ -3,13 +3,7 @@
     "standard"
   ],
   "parserOptions": {
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "ecmaVersion": 6
   },
-  "parser": "babel-eslint",
-  "rules": {
-    "react/display-name": 0
-  }
+  "parser": "babel-eslint"
 }
