@@ -1,6 +1,6 @@
 import {
   Boiler
-} from 'react-boiler'
+} from 'locomotive-boiler'
 
 export function regulate ({ now: { alpha, omega } = {}, was = {} }) {
   const {
