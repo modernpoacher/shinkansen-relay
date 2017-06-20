@@ -1,14 +1,16 @@
 {
-  "name": "react-steam",
-  "version": "0.5.0",
-  "description": "React Steam",
+  "name": "locomotive-steam",
+  "version": "0.0.1",
+  "description": "Locomotive Steam",
   "main": "./index.js",
   "keywords": [
-    "React"
+    "Locomotive",
+    "Steam",
+    "Zashiki Karakuri"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/React.Steam.git"
+    "url": "git@github.com/modernpoacher/Locomotive.Steam.git"
   },
   "author": "Jonathan Perry for Modern Poacher",
   "license": "MIT",
