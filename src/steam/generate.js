@@ -1,6 +1,6 @@
 import {
   Boiler
-} from 'locomotive-boiler'
+} from 'shinkansen-boiler'
 
 export function generate ({
   HAS_ALPHA,
