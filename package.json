@@ -1,16 +1,16 @@
 {
-  "name": "shinkansen-steam",
-  "version": "0.0.1",
-  "description": "Shinkansen Steam",
+  "name": "shinkansen-catenary",
+  "version": "0.0.2",
+  "description": "Shinkansen Catenary",
   "main": "./index.js",
   "keywords": [
     "Shinkansen",
-    "Steam",
+    "Catenary",
     "Zashiki Karakuri"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/Shinkansen.Steam.git"
+    "url": "git@github.com/modernpoacher/Shinkansen.Catenary.git"
   },
   "author": "Jonathan Perry for Modern Poacher",
   "license": "MIT",

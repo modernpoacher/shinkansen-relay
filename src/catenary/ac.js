@@ -2,7 +2,7 @@ import {
   Boiler
 } from 'shinkansen-boiler'
 
-export function generate ({
+export function ac ({
   HAS_ALPHA,
   HAS_OMEGA,
   HAS_ALPHA_CHANGED,
@@ -29,13 +29,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.CHANGE_ALPHA_CHANGE_OMEGA,
-                TEMPERATURE: '001'
+                SIGNAL: Boiler.CHANGE_ALPHA_CHANGE_OMEGA,
+                CHARGE: '001'
               }
             } else {
               return {
-                STEAM: Boiler.CHANGE_ALPHA_ENTER_OMEGA,
-                TEMPERATURE: '002'
+                SIGNAL: Boiler.CHANGE_ALPHA_ENTER_OMEGA,
+                CHARGE: '002'
               }
             }
           } else {
@@ -43,13 +43,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '003'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '003'
               }
             } else {
               return {
-                STEAM: Boiler.ENTER_ALPHA_ENTER_OMEGA,
-                TEMPERATURE: '004'
+                SIGNAL: Boiler.ENTER_ALPHA_ENTER_OMEGA,
+                CHARGE: '004'
               }
             }
           }
@@ -61,13 +61,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '005'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '005'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '006'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '006'
               }
             }
           } else {
@@ -75,13 +75,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '007'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '007'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '008'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '008'
               }
             }
           }
@@ -97,13 +97,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.REMAIN_ALPHA_CHANGE_OMEGA,
-                TEMPERATURE: '009'
+                SIGNAL: Boiler.REMAIN_ALPHA_CHANGE_OMEGA,
+                CHARGE: '009'
               }
             } else {
               return {
-                STEAM: Boiler.REMAIN_ALPHA_ENTER_OMEGA,
-                TEMPERATURE: '010'
+                SIGNAL: Boiler.REMAIN_ALPHA_ENTER_OMEGA,
+                CHARGE: '010'
               }
             }
           } else {
@@ -111,13 +111,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '011'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '011'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '012'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '012'
               }
             }
           }
@@ -129,13 +129,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.REMAIN_ALPHA_REMAIN_OMEGA,
-                TEMPERATURE: '013'
+                SIGNAL: Boiler.REMAIN_ALPHA_REMAIN_OMEGA,
+                CHARGE: '013'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '014'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '014'
               }
             }
           } else {
@@ -143,13 +143,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '015'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '015'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '016'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '016'
               }
             }
           }
@@ -169,13 +169,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.CHANGE_ALPHA_LEAVE_OMEGA,
-                TEMPERATURE: '017'
+                SIGNAL: Boiler.CHANGE_ALPHA_LEAVE_OMEGA,
+                CHARGE: '017'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '018'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '018'
               }
             }
           } else {
@@ -183,13 +183,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '019'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '019'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '020'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '020'
               }
             }
           }
@@ -201,13 +201,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '021'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '021'
               }
             } else {
               return {
-                STEAM: Boiler.CHANGE_ALPHA,
-                TEMPERATURE: '022'
+                SIGNAL: Boiler.CHANGE_ALPHA,
+                CHARGE: '022'
               }
             }
           } else {
@@ -215,13 +215,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '023'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '023'
               }
             } else {
               return {
-                STEAM: Boiler.ENTER_ALPHA,
-                TEMPERATURE: '024'
+                SIGNAL: Boiler.ENTER_ALPHA,
+                CHARGE: '024'
               }
             }
           }
@@ -237,13 +237,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.REMAIN_ALPHA_LEAVE_OMEGA,
-                TEMPERATURE: '025'
+                SIGNAL: Boiler.REMAIN_ALPHA_LEAVE_OMEGA,
+                CHARGE: '025'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '026'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '026'
               }
             }
           } else {
@@ -251,13 +251,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '027'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '027'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '028'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '028'
               }
             }
           }
@@ -269,13 +269,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '029'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '029'
               }
             } else {
               return {
-                STEAM: Boiler.REMAIN_ALPHA,
-                TEMPERATURE: '030'
+                SIGNAL: Boiler.REMAIN_ALPHA,
+                CHARGE: '030'
               }
             }
           } else {
@@ -283,13 +283,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '031'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '031'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '032'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '032'
               }
             }
           }
@@ -313,13 +313,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '033'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '033'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '034'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '034'
               }
             }
           } else {
@@ -327,13 +327,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '035'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '035'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '036'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '036'
               }
             }
           }
@@ -348,13 +348,13 @@ export function generate ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '037'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '037'
                 }
               } else {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '038'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '038'
                 }
               }
             } else {
@@ -362,13 +362,13 @@ export function generate ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '039'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '039'
                 }
               } else {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '040'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '040'
                 }
               }
             }
@@ -380,13 +380,13 @@ export function generate ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '041'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '041'
                 }
               } else {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '042'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '042'
                 }
               }
             } else {
@@ -394,13 +394,13 @@ export function generate ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '043'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '043'
                 }
               } else {
                 return {
-                  STEAM: Boiler.EXCEPTION,
-                  TEMPERATURE: '044'
+                  SIGNAL: Boiler.EXCEPTION,
+                  CHARGE: '044'
                 }
               }
             }
@@ -417,13 +417,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '045'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '045'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '046'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '046'
               }
             }
           } else {
@@ -431,13 +431,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '047'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '047'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '048'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '048'
               }
             }
           }
@@ -449,13 +449,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '049'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '049'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '050'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '050'
               }
             }
           } else {
@@ -463,13 +463,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '051'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '051'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '052'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '052'
               }
             }
           }
@@ -489,13 +489,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.LEAVE_ALPHA_LEAVE_OMEGA,
-                TEMPERATURE: '053'
+                SIGNAL: Boiler.LEAVE_ALPHA_LEAVE_OMEGA,
+                CHARGE: '053'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '054'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '054'
               }
             }
           } else {
@@ -503,13 +503,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '055'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '055'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '056'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '056'
               }
             }
           }
@@ -521,13 +521,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '057'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '057'
               }
             } else {
               return {
-                STEAM: Boiler.LEAVE_ALPHA,
-                TEMPERATURE: '058'
+                SIGNAL: Boiler.LEAVE_ALPHA,
+                CHARGE: '058'
               }
             }
           } else {
@@ -535,13 +535,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '059'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '059'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '060'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '060'
               }
             }
           }
@@ -557,13 +557,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '061'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '061'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '062'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '062'
               }
             }
           } else {
@@ -571,13 +571,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '063'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '063'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '064'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '064'
               }
             }
           }
@@ -589,13 +589,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '065'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '065'
               }
             } else {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '066'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '066'
               }
             }
           } else {
@@ -603,13 +603,13 @@ export function generate ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                STEAM: Boiler.EXCEPTION,
-                TEMPERATURE: '067'
+                SIGNAL: Boiler.EXCEPTION,
+                CHARGE: '067'
               }
             } else {
               return {
-                STEAM: Boiler.INDEX,
-                TEMPERATURE: '068'
+                SIGNAL: Boiler.INDEX,
+                CHARGE: '068'
               }
             }
           }

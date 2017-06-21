@@ -2,7 +2,7 @@ import {
   Boiler
 } from 'shinkansen-boiler'
 
-export function regulate ({ now: { alpha, omega } = {}, was = {} }) {
+export function dc ({ now: { alpha, omega } = {}, was = {} }) {
   const {
     ALPHA,
     OMEGA
