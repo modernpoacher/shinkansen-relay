@@ -1,16 +1,16 @@
 {
-  "name": "shinkansen-catenary",
-  "version": "0.0.2",
-  "description": "Shinkansen Catenary",
+  "name": "shinkansen-relay",
+  "version": "0.0.1",
+  "description": "Shinkansen Relay",
   "main": "./index.js",
   "keywords": [
     "Shinkansen",
-    "Catenary",
+    "Relay",
     "Zashiki Karakuri"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/Shinkansen.Catenary.git"
+    "url": "git@github.com/modernpoacher/Shinkansen.Relay.git"
   },
   "author": "Jonathan Perry for Modern Poacher",
   "license": "MIT",

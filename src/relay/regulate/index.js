@@ -2,7 +2,7 @@ import {
   Signals
 } from 'shinkansen-signals'
 
-export function ac ({
+export function regulate ({
   HAS_ALPHA,
   HAS_OMEGA,
   HAS_ALPHA_CHANGED,
@@ -30,12 +30,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.CHANGE_ALPHA_CHANGE_OMEGA,
-                CHARGE: '001'
+                SERVICE: '001'
               }
             } else {
               return {
                 SIGNAL: Signals.CHANGE_ALPHA_ENTER_OMEGA,
-                CHARGE: '002'
+                SERVICE: '002'
               }
             }
           } else {
@@ -44,12 +44,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '003'
+                SERVICE: '003'
               }
             } else {
               return {
                 SIGNAL: Signals.ENTER_ALPHA_ENTER_OMEGA,
-                CHARGE: '004'
+                SERVICE: '004'
               }
             }
           }
@@ -62,12 +62,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '005'
+                SERVICE: '005'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '006'
+                SERVICE: '006'
               }
             }
           } else {
@@ -76,12 +76,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '007'
+                SERVICE: '007'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '008'
+                SERVICE: '008'
               }
             }
           }
@@ -98,12 +98,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_CHANGE_OMEGA,
-                CHARGE: '009'
+                SERVICE: '009'
               }
             } else {
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_ENTER_OMEGA,
-                CHARGE: '010'
+                SERVICE: '010'
               }
             }
           } else {
@@ -112,12 +112,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '011'
+                SERVICE: '011'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '012'
+                SERVICE: '012'
               }
             }
           }
@@ -130,12 +130,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_REMAIN_OMEGA,
-                CHARGE: '013'
+                SERVICE: '013'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '014'
+                SERVICE: '014'
               }
             }
           } else {
@@ -144,12 +144,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '015'
+                SERVICE: '015'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '016'
+                SERVICE: '016'
               }
             }
           }
@@ -170,12 +170,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.CHANGE_ALPHA_LEAVE_OMEGA,
-                CHARGE: '017'
+                SERVICE: '017'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '018'
+                SERVICE: '018'
               }
             }
           } else {
@@ -184,12 +184,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '019'
+                SERVICE: '019'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '020'
+                SERVICE: '020'
               }
             }
           }
@@ -202,12 +202,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '021'
+                SERVICE: '021'
               }
             } else {
               return {
                 SIGNAL: Signals.CHANGE_ALPHA,
-                CHARGE: '022'
+                SERVICE: '022'
               }
             }
           } else {
@@ -216,12 +216,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '023'
+                SERVICE: '023'
               }
             } else {
               return {
                 SIGNAL: Signals.ENTER_ALPHA,
-                CHARGE: '024'
+                SERVICE: '024'
               }
             }
           }
@@ -238,12 +238,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_LEAVE_OMEGA,
-                CHARGE: '025'
+                SERVICE: '025'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '026'
+                SERVICE: '026'
               }
             }
           } else {
@@ -252,12 +252,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '027'
+                SERVICE: '027'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '028'
+                SERVICE: '028'
               }
             }
           }
@@ -270,12 +270,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '029'
+                SERVICE: '029'
               }
             } else {
               return {
                 SIGNAL: Signals.REMAIN_ALPHA,
-                CHARGE: '030'
+                SERVICE: '030'
               }
             }
           } else {
@@ -284,12 +284,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '031'
+                SERVICE: '031'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '032'
+                SERVICE: '032'
               }
             }
           }
@@ -314,12 +314,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '033'
+                SERVICE: '033'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '034'
+                SERVICE: '034'
               }
             }
           } else {
@@ -328,12 +328,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '035'
+                SERVICE: '035'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '036'
+                SERVICE: '036'
               }
             }
           }
@@ -349,12 +349,12 @@ export function ac ({
               ) {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '037'
+                  SERVICE: '037'
                 }
               } else {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '038'
+                  SERVICE: '038'
                 }
               }
             } else {
@@ -363,12 +363,12 @@ export function ac ({
               ) {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '039'
+                  SERVICE: '039'
                 }
               } else {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '040'
+                  SERVICE: '040'
                 }
               }
             }
@@ -381,12 +381,12 @@ export function ac ({
               ) {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '041'
+                  SERVICE: '041'
                 }
               } else {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '042'
+                  SERVICE: '042'
                 }
               }
             } else {
@@ -395,12 +395,12 @@ export function ac ({
               ) {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '043'
+                  SERVICE: '043'
                 }
               } else {
                 return {
                   SIGNAL: Signals.EXCEPTION,
-                  CHARGE: '044'
+                  SERVICE: '044'
                 }
               }
             }
@@ -418,12 +418,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '045'
+                SERVICE: '045'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '046'
+                SERVICE: '046'
               }
             }
           } else {
@@ -432,12 +432,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '047'
+                SERVICE: '047'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '048'
+                SERVICE: '048'
               }
             }
           }
@@ -450,12 +450,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '049'
+                SERVICE: '049'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '050'
+                SERVICE: '050'
               }
             }
           } else {
@@ -464,12 +464,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '051'
+                SERVICE: '051'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '052'
+                SERVICE: '052'
               }
             }
           }
@@ -490,12 +490,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.LEAVE_ALPHA_LEAVE_OMEGA,
-                CHARGE: '053'
+                SERVICE: '053'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '054'
+                SERVICE: '054'
               }
             }
           } else {
@@ -504,12 +504,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '055'
+                SERVICE: '055'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '056'
+                SERVICE: '056'
               }
             }
           }
@@ -522,12 +522,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '057'
+                SERVICE: '057'
               }
             } else {
               return {
                 SIGNAL: Signals.LEAVE_ALPHA,
-                CHARGE: '058'
+                SERVICE: '058'
               }
             }
           } else {
@@ -536,12 +536,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '059'
+                SERVICE: '059'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '060'
+                SERVICE: '060'
               }
             }
           }
@@ -558,12 +558,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '061'
+                SERVICE: '061'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '062'
+                SERVICE: '062'
               }
             }
           } else {
@@ -572,12 +572,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '063'
+                SERVICE: '063'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '064'
+                SERVICE: '064'
               }
             }
           }
@@ -590,12 +590,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '065'
+                SERVICE: '065'
               }
             } else {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '066'
+                SERVICE: '066'
               }
             }
           } else {
@@ -604,12 +604,12 @@ export function ac ({
             ) {
               return {
                 SIGNAL: Signals.EXCEPTION,
-                CHARGE: '067'
+                SERVICE: '067'
               }
             } else {
               return {
                 SIGNAL: Signals.INDEX,
-                CHARGE: '068'
+                SERVICE: '068'
               }
             }
           }

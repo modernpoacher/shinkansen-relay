@@ -1,3 +1,3 @@
 export {
-  Catenary
-} from './catenary'
+  Relay
+} from './relay'
