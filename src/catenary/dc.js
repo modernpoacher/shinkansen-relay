@@ -1,12 +1,12 @@
 import {
-  Boiler
-} from 'shinkansen-boiler'
+  Signals
+} from 'shinkansen-signals'
 
 export function dc ({ now: { alpha, omega } = {}, was = {} }) {
   const {
     ALPHA,
     OMEGA
-  } = Boiler
+  } = Signals
 
   const HAS_ALPHA = !!alpha
   const HAS_OMEGA = !!omega

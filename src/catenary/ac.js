@@ -1,6 +1,6 @@
 import {
-  Boiler
-} from 'shinkansen-boiler'
+  Signals
+} from 'shinkansen-signals'
 
 export function ac ({
   HAS_ALPHA,
@@ -29,12 +29,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.CHANGE_ALPHA_CHANGE_OMEGA,
+                SIGNAL: Signals.CHANGE_ALPHA_CHANGE_OMEGA,
                 CHARGE: '001'
               }
             } else {
               return {
-                SIGNAL: Boiler.CHANGE_ALPHA_ENTER_OMEGA,
+                SIGNAL: Signals.CHANGE_ALPHA_ENTER_OMEGA,
                 CHARGE: '002'
               }
             }
@@ -43,12 +43,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '003'
               }
             } else {
               return {
-                SIGNAL: Boiler.ENTER_ALPHA_ENTER_OMEGA,
+                SIGNAL: Signals.ENTER_ALPHA_ENTER_OMEGA,
                 CHARGE: '004'
               }
             }
@@ -61,12 +61,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '005'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '006'
               }
             }
@@ -75,12 +75,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '007'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '008'
               }
             }
@@ -97,12 +97,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.REMAIN_ALPHA_CHANGE_OMEGA,
+                SIGNAL: Signals.REMAIN_ALPHA_CHANGE_OMEGA,
                 CHARGE: '009'
               }
             } else {
               return {
-                SIGNAL: Boiler.REMAIN_ALPHA_ENTER_OMEGA,
+                SIGNAL: Signals.REMAIN_ALPHA_ENTER_OMEGA,
                 CHARGE: '010'
               }
             }
@@ -111,12 +111,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '011'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '012'
               }
             }
@@ -129,12 +129,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.REMAIN_ALPHA_REMAIN_OMEGA,
+                SIGNAL: Signals.REMAIN_ALPHA_REMAIN_OMEGA,
                 CHARGE: '013'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '014'
               }
             }
@@ -143,12 +143,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '015'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '016'
               }
             }
@@ -169,12 +169,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.CHANGE_ALPHA_LEAVE_OMEGA,
+                SIGNAL: Signals.CHANGE_ALPHA_LEAVE_OMEGA,
                 CHARGE: '017'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '018'
               }
             }
@@ -183,12 +183,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '019'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '020'
               }
             }
@@ -201,12 +201,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '021'
               }
             } else {
               return {
-                SIGNAL: Boiler.CHANGE_ALPHA,
+                SIGNAL: Signals.CHANGE_ALPHA,
                 CHARGE: '022'
               }
             }
@@ -215,12 +215,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '023'
               }
             } else {
               return {
-                SIGNAL: Boiler.ENTER_ALPHA,
+                SIGNAL: Signals.ENTER_ALPHA,
                 CHARGE: '024'
               }
             }
@@ -237,12 +237,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.REMAIN_ALPHA_LEAVE_OMEGA,
+                SIGNAL: Signals.REMAIN_ALPHA_LEAVE_OMEGA,
                 CHARGE: '025'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '026'
               }
             }
@@ -251,12 +251,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '027'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '028'
               }
             }
@@ -269,12 +269,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '029'
               }
             } else {
               return {
-                SIGNAL: Boiler.REMAIN_ALPHA,
+                SIGNAL: Signals.REMAIN_ALPHA,
                 CHARGE: '030'
               }
             }
@@ -283,12 +283,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '031'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '032'
               }
             }
@@ -313,12 +313,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '033'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '034'
               }
             }
@@ -327,12 +327,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '035'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '036'
               }
             }
@@ -348,12 +348,12 @@ export function ac ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '037'
                 }
               } else {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '038'
                 }
               }
@@ -362,12 +362,12 @@ export function ac ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '039'
                 }
               } else {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '040'
                 }
               }
@@ -380,12 +380,12 @@ export function ac ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '041'
                 }
               } else {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '042'
                 }
               }
@@ -394,12 +394,12 @@ export function ac ({
                 WAS_OMEGA_DEFINED
               ) {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '043'
                 }
               } else {
                 return {
-                  SIGNAL: Boiler.EXCEPTION,
+                  SIGNAL: Signals.EXCEPTION,
                   CHARGE: '044'
                 }
               }
@@ -417,12 +417,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '045'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '046'
               }
             }
@@ -431,12 +431,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '047'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '048'
               }
             }
@@ -449,12 +449,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '049'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '050'
               }
             }
@@ -463,12 +463,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '051'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '052'
               }
             }
@@ -489,12 +489,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.LEAVE_ALPHA_LEAVE_OMEGA,
+                SIGNAL: Signals.LEAVE_ALPHA_LEAVE_OMEGA,
                 CHARGE: '053'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '054'
               }
             }
@@ -503,12 +503,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '055'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '056'
               }
             }
@@ -521,12 +521,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '057'
               }
             } else {
               return {
-                SIGNAL: Boiler.LEAVE_ALPHA,
+                SIGNAL: Signals.LEAVE_ALPHA,
                 CHARGE: '058'
               }
             }
@@ -535,12 +535,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '059'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '060'
               }
             }
@@ -557,12 +557,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '061'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '062'
               }
             }
@@ -571,12 +571,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '063'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '064'
               }
             }
@@ -589,12 +589,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '065'
               }
             } else {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '066'
               }
             }
@@ -603,12 +603,12 @@ export function ac ({
               WAS_OMEGA_DEFINED
             ) {
               return {
-                SIGNAL: Boiler.EXCEPTION,
+                SIGNAL: Signals.EXCEPTION,
                 CHARGE: '067'
               }
             } else {
               return {
-                SIGNAL: Boiler.INDEX,
+                SIGNAL: Signals.INDEX,
                 CHARGE: '068'
               }
             }
