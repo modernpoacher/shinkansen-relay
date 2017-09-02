@@ -2,7 +2,7 @@ import {
   Signals
 } from 'shinkansen-signals'
 
-export function initiate ({ now: { alpha, omega } = {}, was = {} }) {
+export default function initiate ({ now: { alpha, omega } = {}, was = {} }) {
   const {
     ALPHA,
     OMEGA

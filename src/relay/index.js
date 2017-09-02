@@ -1,12 +1,8 @@
-import {
-  initiate
-} from './initiate'
+import initiate from './initiate'
 
-import {
-  regulate
-} from './regulate'
+import regulate from './regulate'
 
-export class Relay {
+export default class Relay {
   static initiate = initiate
 
   static regulate = regulate

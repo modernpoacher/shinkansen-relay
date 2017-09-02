@@ -1,3 +1,1 @@
-export {
-  Relay
-} from './relay'
+export Relay from './relay'

@@ -2,7 +2,7 @@ import {
   Signals
 } from 'shinkansen-signals'
 
-export function regulate ({
+export default function regulate ({
   HAS_ALPHA,
   HAS_OMEGA,
   HAS_ALPHA_CHANGED,
