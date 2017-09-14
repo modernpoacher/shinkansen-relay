@@ -10,10 +10,11 @@ export default function initiate ({ now: { alpha, omega } = {}, was = {} }) {
 
   const HAS_ALPHA = !!alpha
   const HAS_OMEGA = !!omega
-  const HAS_ALPHA_CHANGED = (alpha !== was[ALPHA])
-  const HAS_OMEGA_CHANGED = (omega !== was[OMEGA])
-  const WAS_ALPHA_DEFINED = (ALPHA in was)
-  const WAS_OMEGA_DEFINED = (OMEGA in was)
+
+  const HAS_ALPHA_CHANGED = Reflect.get(was, ALPHA) !== alpha
+  const HAS_OMEGA_CHANGED = Reflect.get(was, OMEGA) !== omega
+  const WAS_ALPHA_DEFINED = Reflect.has(was, ALPHA)
+  const WAS_OMEGA_DEFINED = Reflect.has(was, OMEGA)
 
   return {
     HAS_ALPHA,
