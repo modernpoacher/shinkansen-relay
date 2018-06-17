@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-relay",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Shinkansen Relay",
   "main": "./index.js",
   "keywords": [
@@ -18,7 +18,7 @@
     "node": ">=7.0.0"
   },
   "scripts": {
-    "prepublishOnly": "npm run babel",
+    "prepublishOnly": "npm run lint:fix; npm run babel",
     "prebuild": "bash index.sh",
     "build": "npm run babel",
     "babel": "babel src -d lib",
@@ -30,7 +30,7 @@
     "parser": "babel-eslint"
   },
   "dependencies": {
-    "shinkansen-signals": "0.0.10"
+    "shinkansen-signals": "0.0.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
