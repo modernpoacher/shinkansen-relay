@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-relay",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Shinkansen Relay",
   "main": "./index.js",
   "keywords": [
@@ -30,7 +30,7 @@
     "parser": "babel-eslint"
   },
   "dependencies": {
-    "shinkansen-signals": "0.0.8"
+    "shinkansen-signals": "0.0.9"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
