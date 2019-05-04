@@ -16,18 +16,16 @@
   },
   "author": "Jonathan Perry for Modern Poacher Limited",
   "license": "MIT",
-  "engines": {
-    "node": ">=7.0.0"
-  },
   "scripts": {
-    "prepublishOnly": "npm run lint:fix; npm run babel",
+    "prepublishOnly": "npm run lint:fix && npm run babel",
     "prebuild": "bash index.sh",
     "build": "npm run babel",
     "clean": "bash clean.sh",
     "babel": "babel src -d lib",
     "babel:watch": "npm run babel -- -w",
     "lint": "eslint src",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "pre-commit": "npm run lint && npm run babel && git add lib"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -51,5 +49,10 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^2.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
   }
 }
