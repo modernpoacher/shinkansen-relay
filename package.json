@@ -31,7 +31,7 @@
     "parser": "babel-eslint"
   },
   "dependencies": {
-    "shinkansen-signals": "0.0.11"
+    "shinkansen-signals": "0.0.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
