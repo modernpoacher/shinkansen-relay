@@ -3,13 +3,13 @@ import {
 } from 'shinkansen-signals'
 
 export default function regulate ({
-  HAS_ALPHA,
-  HAS_OMEGA,
-  HAS_ALPHA_CHANGED,
-  HAS_OMEGA_CHANGED,
-  WAS_ALPHA_DEFINED,
-  WAS_OMEGA_DEFINED
-}) {
+  HAS_ALPHA = false,
+  HAS_OMEGA = false,
+  HAS_ALPHA_CHANGED = false,
+  HAS_OMEGA_CHANGED = false,
+  WAS_ALPHA_DEFINED = false,
+  WAS_OMEGA_DEFINED = false
+} = {}) {
   if (
     HAS_ALPHA
   ) {
