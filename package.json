@@ -31,7 +31,7 @@
     "deps:dev": "deps --save-dev"
   },
   "dependencies": {
-    "shinkansen-signals": "0.0.17"
+    "shinkansen-signals": "1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
