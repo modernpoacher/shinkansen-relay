@@ -28,31 +28,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('001')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.CHANGE_ALPHA_CHANGE_OMEGA,
                 SERVICE: '001'
               }
             } else {
-              console.log('002')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.CHANGE_ALPHA_ENTER_OMEGA,
                 SERVICE: '002'
@@ -62,31 +42,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('003')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '003'
               }
             } else {
-              console.log('004')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.ENTER_ALPHA_ENTER_OMEGA,
                 SERVICE: '004'
@@ -100,31 +60,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('005')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '005'
               }
             } else {
-              console.log('006')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '006'
@@ -134,31 +74,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('007')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '007'
               }
             } else {
-              console.log('008')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '008'
@@ -176,31 +96,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('009')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_CHANGE_OMEGA,
                 SERVICE: '009'
               }
             } else {
-              console.log('010')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_ENTER_OMEGA,
                 SERVICE: '010'
@@ -210,31 +110,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('011')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '011'
               }
             } else {
-              console.log('012')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '012'
@@ -248,31 +128,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('013')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_REMAIN_OMEGA,
                 SERVICE: '013'
               }
             } else {
-              console.log('014')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '014'
@@ -282,31 +142,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('015')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '015'
               }
             } else {
-              console.log('016')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '016'
@@ -328,31 +168,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('017')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.CHANGE_ALPHA_LEAVE_OMEGA,
                 SERVICE: '017'
               }
             } else {
-              console.log('018')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '018'
@@ -362,31 +182,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('019')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '019'
               }
             } else {
-              console.log('020')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '020'
@@ -400,31 +200,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('021')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '021'
               }
             } else {
-              console.log('022')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.CHANGE_ALPHA,
                 SERVICE: '022'
@@ -434,31 +214,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('023')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '023'
               }
             } else {
-              console.log('024')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.ENTER_ALPHA,
                 SERVICE: '024'
@@ -476,31 +236,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('025')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.REMAIN_ALPHA_LEAVE_OMEGA,
                 SERVICE: '025'
               }
             } else {
-              console.log('026')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '026'
@@ -510,31 +250,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('027')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '027'
               }
             } else {
-              console.log('028')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '028'
@@ -548,31 +268,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('029')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '029'
               }
             } else {
-              console.log('030')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.REMAIN_ALPHA,
                 SERVICE: '030'
@@ -582,31 +282,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('031')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '031'
               }
             } else {
-              console.log('032')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '032'
@@ -632,31 +312,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('033')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '033'
               }
             } else {
-              console.log('034')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '034'
@@ -666,31 +326,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('035')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '035'
               }
             } else {
-              console.log('036')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '036'
@@ -704,31 +344,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.error('037')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '037'
               }
             } else {
-              console.error('038')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '038'
@@ -738,31 +358,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.error('039')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '039'
               }
             } else {
-              console.error('040')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '040'
@@ -780,31 +380,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('041')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '041'
               }
             } else {
-              console.log('042')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '042'
@@ -814,31 +394,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('043')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '043'
               }
             } else {
-              console.log('044')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '044'
@@ -852,31 +412,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('045')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '045'
               }
             } else {
-              console.log('046')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '046'
@@ -886,31 +426,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('047')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '047'
               }
             } else {
-              console.log('048')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '048'
@@ -932,31 +452,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('049')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.LEAVE_ALPHA_LEAVE_OMEGA,
                 SERVICE: '049'
               }
             } else {
-              console.log('050')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '050'
@@ -966,31 +466,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('051')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '051'
               }
             } else {
-              console.log('052')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '052'
@@ -1004,31 +484,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('053')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '053'
               }
             } else {
-              console.log('054')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.LEAVE_ALPHA,
                 SERVICE: '054'
@@ -1038,31 +498,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('055')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '055'
               }
             } else {
-              console.log('056')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '056'
@@ -1080,31 +520,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('057')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '057'
               }
             } else {
-              console.log('058')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '058'
@@ -1114,31 +534,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('059')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '059'
               }
             } else {
-              console.log('060')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '060'
@@ -1152,31 +552,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('061')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '061'
               }
             } else {
-              console.log('062')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '062'
@@ -1186,31 +566,11 @@ export default function regulate ({
             if (
               WAS_OMEGA_DEFINED
             ) {
-              console.log('063')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.EXCEPTION,
                 SERVICE: '063'
               }
             } else {
-              console.log('064')
-              console.table({
-                HAS_ALPHA,
-                HAS_OMEGA,
-                HAS_ALPHA_CHANGED,
-                HAS_OMEGA_CHANGED,
-                WAS_ALPHA_DEFINED,
-                WAS_OMEGA_DEFINED
-              })
-
               return {
                 SIGNAL: Signals.INDEX,
                 SERVICE: '064'

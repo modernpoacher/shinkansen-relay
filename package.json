@@ -25,7 +25,7 @@
     "babel:watch": "npm run babel -- -w",
     "lint": "eslint src *.js test",
     "lint:fix": "npm run lint -- --fix",
-    "test": "mocha -r @babel/register test/**/*.spec.js",
+    "test": "mocha -r @babel/register test/**/*.spec.js test/relay/**/*.spec.js --recursive",
     "pre-commit": "npm run lint && npm run babel && git add lib",
     "deps": "deps",
     "deps:prod": "deps --save-prod",
@@ -55,9 +55,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.5",
     "mocha": "^6.2.0",
-    "rimraf": "^3.0.0",
-    "sinon": "^7.4.2",
-    "sinon-chai": "^3.3.0"
+    "rimraf": "^3.0.0"
   },
   "husky": {
     "hooks": {

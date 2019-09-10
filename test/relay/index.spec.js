@@ -1,13 +1,10 @@
-import chai, { expect } from 'chai'
-import sinonChai from 'sinon-chai'
+import { expect } from 'chai'
 
 import {
   Signals
 } from 'shinkansen-signals'
 
 import Relay from 'shinkansen-relay/relay'
-
-chai.use(sinonChai)
 
 function mockSignals () {
   Signals.raise({
@@ -250,12 +247,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.CHANGE_ALPHA_CHANGE_OMEGA,
@@ -278,12 +271,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.CHANGE_ALPHA_ENTER_OMEGA,
@@ -306,12 +295,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -334,12 +319,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.ENTER_ALPHA_ENTER_OMEGA,
@@ -362,12 +343,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -390,12 +367,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -421,9 +394,6 @@ describe('shinkansen-relay/relay', () => {
           const p = { ...parameters, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
 
-          console.table(p)
-          console.table(r)
-
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
             SERVICE: '007'
@@ -445,12 +415,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -473,12 +439,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.REMAIN_ALPHA_CHANGE_OMEGA,
@@ -501,12 +463,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.REMAIN_ALPHA_ENTER_OMEGA,
@@ -529,12 +487,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -557,12 +511,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -585,12 +535,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.REMAIN_ALPHA_REMAIN_OMEGA,
@@ -613,12 +559,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -641,12 +583,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -669,12 +607,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -697,12 +631,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.CHANGE_ALPHA_LEAVE_OMEGA,
@@ -725,12 +655,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -753,12 +679,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -781,12 +703,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -809,12 +727,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -837,12 +751,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.CHANGE_ALPHA,
@@ -865,12 +775,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -893,12 +799,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.ENTER_ALPHA,
@@ -921,12 +823,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.REMAIN_ALPHA_LEAVE_OMEGA,
@@ -949,12 +847,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -977,12 +871,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1005,12 +895,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1033,12 +919,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1061,12 +943,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.REMAIN_ALPHA,
@@ -1092,9 +970,6 @@ describe('shinkansen-relay/relay', () => {
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
 
-          console.table(p)
-          console.table(r)
-
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
             SERVICE: '031'
@@ -1119,9 +994,6 @@ describe('shinkansen-relay/relay', () => {
           const p = { ...parameters, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
 
-          console.table(p)
-          console.table(r)
-
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
             SERVICE: '032'
@@ -1143,12 +1015,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1171,12 +1039,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1199,12 +1063,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1227,12 +1087,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1255,12 +1111,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1283,12 +1135,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1311,12 +1159,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1339,12 +1183,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1367,12 +1207,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1395,12 +1231,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1423,12 +1255,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1451,12 +1279,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1479,12 +1303,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1507,12 +1327,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1535,12 +1351,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1563,12 +1375,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1591,12 +1399,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.LEAVE_ALPHA_LEAVE_OMEGA,
@@ -1619,12 +1423,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1647,12 +1447,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1675,12 +1471,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1703,12 +1495,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1731,12 +1519,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.LEAVE_ALPHA,
@@ -1759,12 +1543,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1787,12 +1567,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1815,12 +1591,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1843,12 +1615,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1871,12 +1639,8 @@ describe('shinkansen-relay/relay', () => {
             }
 
           */
-
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1902,9 +1666,6 @@ describe('shinkansen-relay/relay', () => {
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
 
-          console.table(p)
-          console.table(r)
-
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
             SERVICE: '060'
@@ -1928,9 +1689,6 @@ describe('shinkansen-relay/relay', () => {
           */
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -1956,9 +1714,6 @@ describe('shinkansen-relay/relay', () => {
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
 
-          console.table(p)
-          console.table(r)
-
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
             SERVICE: '062'
@@ -1982,9 +1737,6 @@ describe('shinkansen-relay/relay', () => {
           */
           const p = { ...parameters, HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false }
           const r = Relay.regulate(p)
-
-          console.table(p)
-          console.table(r)
 
           expect(r).to.eql({
             SIGNAL: Signals.EXCEPTION,
@@ -2010,9 +1762,6 @@ describe('shinkansen-relay/relay', () => {
           const p = { HAS_ALPHA: false, HAS_OMEGA: false, HAS_ALPHA_CHANGED: false, HAS_OMEGA_CHANGED: false, WAS_ALPHA_DEFINED: false, WAS_OMEGA_DEFINED: false }
           const r = Relay.regulate(p)
 
-          console.table(p)
-          console.table(r)
-
           expect(r).to.eql({
             SIGNAL: Signals.INDEX,
             SERVICE: '064'
@@ -2024,8 +1773,6 @@ describe('shinkansen-relay/relay', () => {
     describe('Without parameters', () => {
       it('returns an object with `SIGNAL` as `INDEX` and `SERVICE` as `064`', () => {
         const r = Relay.regulate()
-
-        console.table(r)
 
         expect(r).to.eql({
           SIGNAL: Signals.INDEX,
