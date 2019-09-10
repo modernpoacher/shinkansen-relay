@@ -23,7 +23,7 @@
     "clean": "rimraf lib",
     "babel": "babel src -d lib",
     "babel:watch": "npm run babel -- -w",
-    "lint": "eslint src *.js test",
+    "lint": "eslint src test *.js",
     "lint:fix": "npm run lint -- --fix",
     "test": "mocha -r @babel/register test/**/*.spec.js test/relay/**/*.spec.js --recursive",
     "pre-commit": "npm run lint && npm run babel && git add lib",

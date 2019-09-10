@@ -6,7 +6,7 @@ import {
 
 import Relay from 'shinkansen-relay/relay'
 
-function mockSignals () {
+function mock () {
   Signals.raise({
     ALPHA: 'MOCK ALPHA',
     OMEGA: 'MOCK OMEGA',
@@ -64,8 +64,6 @@ function mockSignals () {
 }
 
 describe('shinkansen-relay/relay', () => {
-  beforeEach(mockSignals)
-
   it('is a function', () => {
     expect(Relay).to.be.a('function')
   })
@@ -83,6 +81,8 @@ describe('shinkansen-relay/relay', () => {
   })
 
   describe('`Relay.initiate()`', () => {
+    beforeEach(mock)
+
     describe('With parameters', () => {
       describe('With `now`', () => {
         describe('`now` has `alpha`', () => {
@@ -231,6 +231,8 @@ describe('shinkansen-relay/relay', () => {
       WAS_ALPHA_DEFINED: true,
       WAS_OMEGA_DEFINED: true
     }
+
+    beforeEach(mock)
 
     describe('With parameters', () => {
       describe('All field values are true', () => {
