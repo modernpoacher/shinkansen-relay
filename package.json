@@ -26,10 +26,7 @@
     "lint": "eslint src test *.js",
     "lint:fix": "npm run lint -- --fix",
     "test": "mocha -r @babel/register test/**/*.spec.js test/relay/**/*.spec.js --recursive",
-    "pre-commit": "npm run lint && npm test && npm run babel && git add lib",
-    "deps": "deps",
-    "deps:prod": "deps --save-prod",
-    "deps:dev": "deps --save-dev"
+    "pre-commit": "npm run lint && npm test && npm run babel && git add lib"
   },
   "dependencies": {
     "shinkansen-signals": "1.0.2"
