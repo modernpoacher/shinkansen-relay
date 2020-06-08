@@ -29,7 +29,7 @@
     "pre-commit": "npm run lint && npm test && npm run babel && git add lib"
   },
   "dependencies": {
-    "shinkansen-signals": "1.0.7"
+    "shinkansen-signals": "1.0.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
