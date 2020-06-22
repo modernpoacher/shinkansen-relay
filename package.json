@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-relay",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Shinkansen Relay",
   "main": "./index.js",
   "keywords": [
