@@ -8,7 +8,7 @@ import {
 } from 'shinkansen-relay'
 ```
 
-*Relay* computes routes for *Zashiki Karakuri*.
+*Relay* computes route changes for *Zashiki Karakuri*.
 
 ```javascript
 export class Relay {
