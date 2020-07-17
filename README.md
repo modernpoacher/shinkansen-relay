@@ -19,7 +19,7 @@ export class Relay {
 
 ## See also
 
-- [Shinkansen Rails](https://github.com/modernpoacher/shinkansen-rails)
+- [Shinkansen Signals](https://github.com/modernpoacher/shinkansen-signals)
 - [Zashiki](https://github.com/modernpoacher/zashiki)
 - [Zashiki Mechanism](https://github.com/modernpoacher/zashiki-mechanism)
 - [Zashiki Transport](https://github.com/modernpoacher/zashiki-transport)
