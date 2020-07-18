@@ -1,4 +1,4 @@
-## shinkansen-relay
+## `shinkansen-relay`
 
 # Shinkansen Relay
 
