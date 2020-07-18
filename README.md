@@ -1,4 +1,4 @@
-## @modernpoacher/shinkansen-relay
+## shinkansen-relay
 
 # Shinkansen Relay
 
