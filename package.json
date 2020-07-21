@@ -58,10 +58,10 @@
     "husky": "^4.2.5",
     "mocha": "^8.0.1",
     "rimraf": "^3.0.2",
-    "shinkansen-signals": "1.0.14"
+    "shinkansen-signals": "1.0.15"
   },
   "peerDependencies": {
-    "shinkansen-signals": "1.0.14"
+    "shinkansen-signals": "1.0.15"
   },
   "husky": {
     "hooks": {
