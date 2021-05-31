@@ -6,62 +6,6 @@ import {
 
 import Relay from 'shinkansen-relay/relay'
 
-function mock () {
-  Signals.raise({
-    ALPHA: 'MOCK ALPHA',
-    OMEGA: 'MOCK OMEGA',
-
-    EMBARK: 'MOCK EMBARK',
-    DEBARK: 'MOCK DEBARK',
-
-    INDEX: 'MOCK INDEX',
-
-    ENTER_ALPHA: 'MOCK ENTER_ALPHA',
-    LEAVE_ALPHA: 'MOCK LEAVE_ALPHA',
-
-    CHANGE_ALPHA: 'MOCK CHANGE_ALPHA',
-    REMAIN_ALPHA: 'MOCK REMAIN_ALPHA',
-
-    ENTER_OMEGA: 'MOCK ENTER_OMEGA',
-    LEAVE_OMEGA: 'MOCK LEAVE_OMEGA',
-
-    CHANGE_OMEGA: 'MOCK CHANGE_OMEGA',
-    REMAIN_OMEGA: 'MOCK REMAIN_OMEGA',
-
-    ALPHA_PATTERN: 'MOCK ALPHA_PATTERN',
-    OMEGA_PATTERN: 'MOCK OMEGA_PATTERN',
-
-    EMBARK_STAGE: 'MOCK EMBARK_STAGE',
-    DEBARK_STAGE: 'MOCK DEBARK_STAGE',
-
-    EMBARK_PATTERN: 'MOCK EMBARK_PATTERN',
-    DEBARK_PATTERN: 'MOCK DEBARK_PATTERN',
-
-    ENTER_ALPHA_ENTER_OMEGA: 'MOCK ENTER_ALPHA_ENTER_OMEGA',
-    LEAVE_ALPHA_LEAVE_OMEGA: 'MOCK LEAVE_ALPHA_LEAVE_OMEGA',
-
-    CHANGE_ALPHA_ENTER_OMEGA: 'MOCK CHANGE_ALPHA_ENTER_OMEGA',
-    CHANGE_ALPHA_LEAVE_OMEGA: 'MOCK CHANGE_ALPHA_LEAVE_OMEGA',
-
-    REMAIN_ALPHA_ENTER_OMEGA: 'MOCK REMAIN_ALPHA_ENTER_OMEGA',
-    REMAIN_ALPHA_LEAVE_OMEGA: 'MOCK REMAIN_ALPHA_LEAVE_OMEGA',
-
-    CHANGE_ALPHA_CHANGE_OMEGA: 'MOCK CHANGE_ALPHA_CHANGE_OMEGA',
-    CHANGE_ALPHA_REMAIN_OMEGA: 'MOCK CHANGE_ALPHA_REMAIN_OMEGA',
-
-    REMAIN_ALPHA_CHANGE_OMEGA: 'MOCK REMAIN_ALPHA_CHANGE_OMEGA',
-    REMAIN_ALPHA_REMAIN_OMEGA: 'MOCK REMAIN_ALPHA_REMAIN_OMEGA',
-
-    EXCEPTION: 'MOCK EXCEPTION',
-
-    FAILURE: 100,
-    SUCCESS: 101,
-    IN_PROGRESS: 103,
-    UNKNOWN: 104,
-    COMPLETE: 105
-  })
-}
-
 describe('shinkansen-relay/relay', () => {
   it('is a function', () => {
     expect(Relay).to.be.a('function')
@@ -80,13 +24,11 @@ describe('shinkansen-relay/relay', () => {
   })
 
   describe('`Relay.initiate()`', () => {
-    beforeEach(mock)
-
     describe('With parameters', () => {
       describe('With `now`', () => {
         describe('`now` has `alpha`', () => {
           it('returns an object with `HAS_ALPHA` and `HAS_ALPHA_CHANGED` both true', () => {
-            expect(Relay.initiate({ now: { [Signals.ALPHA]: 'MOCK ALPHA' } }))
+            expect(Relay.initiate({ now: { [Signals.ALPHA]: 'ALPHA' } }))
               .to.eql({
                 HAS_ALPHA: true,
                 HAS_OMEGA: false,
@@ -100,7 +42,7 @@ describe('shinkansen-relay/relay', () => {
 
         describe('`now` has `omega`', () => {
           it('returns an object with `HAS_OMEGA` and `HAS_OMEGA_CHANGED` both true', () => {
-            expect(Relay.initiate({ now: { [Signals.OMEGA]: 'MOCK OMEGA' } }))
+            expect(Relay.initiate({ now: { [Signals.OMEGA]: 'OMEGA' } }))
               .to.eql({
                 HAS_ALPHA: false,
                 HAS_OMEGA: true,
@@ -116,7 +58,7 @@ describe('shinkansen-relay/relay', () => {
       describe('With `was`', () => {
         describe('`was` has `alpha`', () => {
           it('returns an object with `HAS_ALPHA_CHANGED` and `WAS_ALPHA_DEFINED` both true', () => {
-            expect(Relay.initiate({ was: { [Signals.ALPHA]: 'MOCK ALPHA' } }))
+            expect(Relay.initiate({ was: { [Signals.ALPHA]: 'ALPHA' } }))
               .to.eql({
                 HAS_ALPHA: false,
                 HAS_OMEGA: false,
@@ -130,7 +72,7 @@ describe('shinkansen-relay/relay', () => {
 
         describe('`was` has `omega`', () => {
           it('returns an object with `HAS_OMEGA_CHANGED` and `WAS_OMEGA_DEFINED` both true', () => {
-            expect(Relay.initiate({ was: { [Signals.OMEGA]: 'MOCK OMEGA' } }))
+            expect(Relay.initiate({ was: { [Signals.OMEGA]: 'OMEGA' } }))
               .to.eql({
                 HAS_ALPHA: false,
                 HAS_OMEGA: false,
@@ -147,7 +89,7 @@ describe('shinkansen-relay/relay', () => {
         describe('`was` and `now` have `alpha`', () => {
           describe('Values are the same', () => {
             it('returns an object with `HAS_ALPHA` and `WAS_ALPHA_DEFINED` both true', () => {
-              expect(Relay.initiate({ was: { [Signals.ALPHA]: 'MOCK ALPHA' }, now: { [Signals.ALPHA]: 'MOCK ALPHA' } }))
+              expect(Relay.initiate({ was: { [Signals.ALPHA]: 'ALPHA' }, now: { [Signals.ALPHA]: 'ALPHA' } }))
                 .to.eql({
                   HAS_ALPHA: true,
                   HAS_OMEGA: false,
@@ -161,7 +103,7 @@ describe('shinkansen-relay/relay', () => {
 
           describe('Values are not the same', () => {
             it('returns an object with `HAS_ALPHA` and `HAS_ALPHA_CHANGED` and `WAS_ALPHA_DEFINED` all true', () => {
-              expect(Relay.initiate({ was: { [Signals.ALPHA]: 'MOCK ALPHA' }, now: { [Signals.ALPHA]: 'MOCK ALPHA CHANGED' } }))
+              expect(Relay.initiate({ was: { [Signals.ALPHA]: 'ALPHA' }, now: { [Signals.ALPHA]: 'ALPHA CHANGED' } }))
                 .to.eql({
                   HAS_ALPHA: true,
                   HAS_OMEGA: false,
@@ -177,7 +119,7 @@ describe('shinkansen-relay/relay', () => {
         describe('`was` and `now` have `omega`', () => {
           describe('Values are the same', () => {
             it('returns an object with `HAS_OMEGA` and `WAS_OMEGA_DEFINED` both true', () => {
-              expect(Relay.initiate({ was: { [Signals.OMEGA]: 'MOCK OMEGA' }, now: { [Signals.OMEGA]: 'MOCK OMEGA' } }))
+              expect(Relay.initiate({ was: { [Signals.OMEGA]: 'OMEGA' }, now: { [Signals.OMEGA]: 'OMEGA' } }))
                 .to.eql({
                   HAS_ALPHA: false,
                   HAS_OMEGA: true,
@@ -191,7 +133,7 @@ describe('shinkansen-relay/relay', () => {
 
           describe('Values are not the same', () => {
             it('returns an object with `HAS_OMEGA` and `HAS_OMEGA_CHANGED` and `WAS_OMEGA_DEFINED` all true', () => {
-              expect(Relay.initiate({ was: { [Signals.OMEGA]: 'MOCK OMEGA' }, now: { [Signals.OMEGA]: 'MOCK OMEGA CHANGED' } }))
+              expect(Relay.initiate({ was: { [Signals.OMEGA]: 'OMEGA' }, now: { [Signals.OMEGA]: 'OMEGA CHANGED' } }))
                 .to.eql({
                   HAS_ALPHA: false,
                   HAS_OMEGA: true,
@@ -230,8 +172,6 @@ describe('shinkansen-relay/relay', () => {
       WAS_ALPHA_DEFINED: true,
       WAS_OMEGA_DEFINED: true
     }
-
-    beforeEach(mock)
 
     describe('With parameters', () => {
       describe('All field values are true', () => {
