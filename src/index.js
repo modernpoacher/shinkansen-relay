@@ -1,1 +1,1 @@
-export Relay from './relay'
+export { default as Relay } from './relay'
