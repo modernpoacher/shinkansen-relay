@@ -9,28 +9,23 @@
     "Zashiki",
     "Karakuri"
   ],
-  "main": "./index.js",
+  "main": "./src/index.cjs",
   "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=18.5.0"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com/modernpoacher/shinkansen-relay.git"
   },
   "scripts": {
-    "prepublishOnly": "cross-env NODE_ENV=production npm run build",
-    "prebuild": "npm run clean",
-    "build": "cross-env DEBUG=shinkansen-relay npm run babel",
-    "build:watch": "npm run babel:watch",
-    "clean": "rimraf lib",
-    "babel": "babel src -d lib",
-    "babel:watch": "npm run babel -- -w",
-    "lint": "eslint .",
+    "prelint": "npm run nvm",
+    "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test mocha -r @babel/register test --recursive",
-    "pre-commit": "npm run lint && npm test && npm run build && git add lib"
+    "pretest": "npm run nvm",
+    "test": "cross-env NODE_ENV=test mocha test --recursive",
+    "nvm": "bash nvm.sh"
   },
   "dependencies": {
     "debug": "^4.3.4"
@@ -58,5 +53,19 @@
     "mocha": "^10.2.0",
     "rimraf": "^5.0.0",
     "shinkansen-signals": "1.1.2"
+  },
+  "imports": {
+    "#relay/initiate": "./src/relay/initiate/index.mjs",
+    "#relay/regulate": "./src/relay/regulate/index.mjs",
+    "#relay": "./src/relay/index.mjs"
+  },
+  "exports": {
+    ".": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.cjs"
+    },
+    "./relay/initiate": "./src/relay/initiate/index.mjs",
+    "./relay/regulate": "./src/relay/regulate/index.mjs",
+    "./relay": "./src/relay/index.mjs"
   }
 }

@@ -1,6 +1,6 @@
-import initiate from './initiate'
+import initiate from './initiate/index.mjs'
 
-import regulate from './regulate'
+import regulate from './regulate/index.mjs'
 
 export default class Relay {
   static initiate = initiate
