@@ -55,11 +55,6 @@
     "rimraf": "^5.0.0",
     "shinkansen-signals": "1.1.2"
   },
-  "imports": {
-    "#relay/initiate": "./src/relay/initiate/index.mjs",
-    "#relay/regulate": "./src/relay/regulate/index.mjs",
-    "#relay": "./src/relay/index.mjs"
-  },
   "exports": {
     ".": {
       "require": "./src/index.cjs",

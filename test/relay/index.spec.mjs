@@ -4,9 +4,9 @@ import {
   Signals
 } from 'shinkansen-signals'
 
-import Relay from '#relay'
+import Relay from 'shinkansen-relay/relay'
 
-describe('#relay', () => {
+describe('shinkansen-relay/relay', () => {
   it('is a function', () => {
     expect(Relay).to.be.a('function')
   })

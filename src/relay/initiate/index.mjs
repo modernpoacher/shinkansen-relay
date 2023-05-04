@@ -1,6 +1,12 @@
+import debug from 'debug'
+
 import {
   Signals
 } from 'shinkansen-signals'
+
+const log = debug('shinkansen-relay')
+
+log('`shinkansen` is awake')
 
 export default function initiate ({ now = {}, was = {} } = {}) {
   const {
