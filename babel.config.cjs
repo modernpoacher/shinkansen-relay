@@ -58,6 +58,8 @@ module.exports = (api) => {
   return {
     presets,
     plugins,
-    ignore: [/node_modules\/(?!shinkansen-)/]
+    ignore: [
+      /node_modules\/(?!shinkansen|@modernpoacher)/
+    ]
   }
 }
