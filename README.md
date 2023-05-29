@@ -1,6 +1,6 @@
 ## `shinkansen-relay`
 
-# Shinkansen Relay
+# Relay
 
 ```javascript
 import {
@@ -19,8 +19,4 @@ export class Relay {
 
 ## See also
 
-- [Shinkansen Signals](https://github.com/modernpoacher/shinkansen-signals)
-- [Zashiki](https://github.com/modernpoacher/zashiki)
-- [Zashiki Mechanism](https://github.com/modernpoacher/zashiki-mechanism)
-- [Zashiki Transport](https://github.com/modernpoacher/zashiki-transport)
-- [Zashiki React Redux](https://github.com/modernpoacher/zashiki-react-redux)
+- [Signals](https://github.com/modernpoacher/shinkansen-signals)
