@@ -55,7 +55,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
-    "shinkansen-signals": "1.1.50"
+    "shinkansen-signals": "1.1.51"
   },
   "exports": {
     ".": {
