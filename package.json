@@ -54,7 +54,7 @@
     "eslint-import-resolver-babel-module": "^5.3.2",
     "husky": "^9.0.10",
     "mocha": "^10.2.0",
-    "shinkansen-signals": "1.1.110"
+    "shinkansen-signals": "1.1.111"
   },
   "exports": {
     ".": {
