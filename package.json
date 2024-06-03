@@ -26,13 +26,13 @@
     "url": "git@github.com/modernpoacher/shinkansen-relay.git"
   },
   "scripts": {
-    "prelint": "npm run nvm",
     "lint": "eslint . --ext .mjs,.cjs,.mts,.cts",
     "lint:fix": "npm run lint -- --fix",
-    "pretest": "npm run nvm",
-    "test": "cross-env NODE_ENV=test mocha test --recursive",
     "nvm": "bash nvm.sh",
-    "prepare": "husky"
+    "prelint": "npm run nvm",
+    "prepare": "husky",
+    "pretest": "npm run nvm",
+    "test": "cross-env NODE_ENV=test mocha test --recursive"
   },
   "dependencies": {
     "debug": "^4.3.5"
@@ -63,8 +63,8 @@
       "require": "./src/index.cjs",
       "import": "./src/index.cjs"
     },
+    "./relay": "./src/relay/index.mjs",
     "./relay/initiate": "./src/relay/initiate/index.mjs",
-    "./relay/regulate": "./src/relay/regulate/index.mjs",
-    "./relay": "./src/relay/index.mjs"
+    "./relay/regulate": "./src/relay/regulate/index.mjs"
   }
 }
