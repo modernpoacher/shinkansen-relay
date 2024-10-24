@@ -46,7 +46,7 @@
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "babel-plugin-module-resolver": "^5.0.2",
-    "chai": "^5.1.1",
+    "chai": "^5.1.2",
     "core-js": "^3.38.1",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
@@ -55,7 +55,7 @@
     "eslint-import-resolver-babel-module": "^5.3.2",
     "husky": "^9.1.6",
     "mocha": "^10.7.3",
-    "shinkansen-signals": "1.1.175"
+    "shinkansen-signals": "1.1.176"
   },
   "exports": {
     ".": {
