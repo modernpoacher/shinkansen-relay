@@ -38,25 +38,11 @@ const presets = [
   ]
 ]
 
-const plugins = [
-  [
-    'module-resolver', {
-      alias: {
-        'shinkansen-relay/relay/initiate': './src/relay/initiate/index.mjs',
-        'shinkansen-relay/relay/regulate': './src/relay/regulate/index.mjs',
-        'shinkansen-relay/relay': './src/relay/index.mjs',
-        'shinkansen-relay': './src/index.cjs'
-      }
-    }
-  ]
-]
-
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
     presets,
-    plugins,
     ignore: [
       /node_modules\/(?!shinkansen|@modernpoacher)/
     ]

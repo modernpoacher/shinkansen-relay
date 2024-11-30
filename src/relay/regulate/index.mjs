@@ -1,3 +1,7 @@
+/**
+ * @typedef {import('shinkansen-relay').RelayTypes} RelayTypes
+ */
+
 import debug from 'debug'
 
 import {
@@ -8,6 +12,10 @@ const log = debug('shinkansen-relay')
 
 log('`shinkansen` is awake')
 
+/**
+ * @param {RelayTypes.StateType} state
+ * @returns {RelayTypes.RelayType}
+ */
 export default function regulate ({
   HAS_ALPHA = false,
   HAS_OMEGA = false,

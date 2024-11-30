@@ -1,7 +1,11 @@
-declare module 'shinkansen-relay/relay' {
+declare module '#relay/relay' {
   export default class Relay {
-    static initiate (relay: { was: Record<string, string>, now: Record<string, string> }): StateType
+    static initiate (relay: { was: Record<PropertyKey, string>, now: Record<PropertyKey, string> }): RelayTypes.StateType
 
-    static regulate (state: StateType): RelayType
+    static regulate (state: RelayTypes.StateType): RelayTypes.RelayType
   }
+}
+
+declare module 'shinkansen-relay/relay' {
+  export { default } from '#relay/relay'
 }

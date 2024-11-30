@@ -57,10 +57,16 @@
     "mocha": "^10.8.2",
     "shinkansen-signals": "1.1.182"
   },
+  "imports": {
+    "#relay": "./src/index.mjs",
+    "#relay/relay": "./src/relay/index.mjs",
+    "#relay/relay/initiate": "./src/relay/initiate/index.mjs",
+    "#relay/relay/regulate": "./src/relay/regulate/index.mjs"
+  },
   "exports": {
     ".": {
       "require": "./src/index.cjs",
-      "import": "./src/index.cjs"
+      "import": "./src/index.mjs"
     },
     "./relay": "./src/relay/index.mjs",
     "./relay/initiate": "./src/relay/initiate/index.mjs",

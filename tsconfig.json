@@ -1,11 +1,30 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "paths": {
+      "#relay": [
+        "src/index.mjs"
+      ],
+      "#relay/relay": [
+        "src/relay/index.mjs"
+      ],
+      "#relay/relay/initiate": [
+        "src/relay/initiate/index.mjs"
+      ],
+      "#relay/relay/regulate": [
+        "src/relay/regulate/index.mjs"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
