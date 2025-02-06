@@ -27,8 +27,12 @@ export default function initiate ({ now = {}, was = {} } = {}) {
 
   const HAS_ALPHA = !!alpha
   const HAS_OMEGA = !!omega
+
+  log(now, HAS_ALPHA, HAS_OMEGA)
+
   const HAS_ALPHA_CHANGED = Reflect.get(was, ALPHA) !== alpha
   const HAS_OMEGA_CHANGED = Reflect.get(was, OMEGA) !== omega
+
   const WAS_ALPHA_DEFINED = Reflect.has(was, ALPHA)
   const WAS_OMEGA_DEFINED = Reflect.has(was, OMEGA)
 
