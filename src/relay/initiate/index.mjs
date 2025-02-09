@@ -1,5 +1,5 @@
 /**
- * @typedef {import('shinkansen-relay').RelayTypes} RelayTypes
+ * @typedef {RelayTypes.InitiateType} InitiateType
  */
 
 import debug from 'debug'
@@ -13,10 +13,15 @@ const log = debug('shinkansen-relay')
 log('`shinkansen` is awake')
 
 /**
- * @param {{ was: Record<PropertyKey, string>, now: Record<PropertyKey, string> }} relay
- * @returns {RelayTypes.StateType}
+ * @param {{
+ *  was?: Record<PropertyKey, string> | Record<PropertyKey, never>,
+ *  now?: Record<PropertyKey, string> | Record<PropertyKey, never>
+ * }} relay
+ * @returns {InitiateType}
  */
 export default function initiate ({ now = {}, was = {} } = {}) {
+  log('initiate')
+
   const {
     ALPHA,
     OMEGA

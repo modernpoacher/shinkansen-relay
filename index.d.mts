@@ -1,11 +1,11 @@
 declare global {
   namespace RelayTypes {
-    export interface RelayType {
+    export interface RegulateType {
       SIGNAL: string
       SERVICE: string
     }
 
-    export type StateType = Record<PropertyKey, boolean>
+    export type InitiateType = Record<PropertyKey, boolean>
   }
 }
 

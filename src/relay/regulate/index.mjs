@@ -1,5 +1,6 @@
 /**
- * @typedef {import('shinkansen-relay').RelayTypes} RelayTypes
+ * @typedef {RelayTypes.InitiateType} InitiateType
+ * @typedef {RelayTypes.RegulateType} RegulateType
  */
 
 import debug from 'debug'
@@ -13,8 +14,8 @@ const log = debug('shinkansen-relay')
 log('`shinkansen` is awake')
 
 /**
- * @param {RelayTypes.StateType} state
- * @returns {RelayTypes.RelayType}
+ * @param {InitiateType | Record<PropertyKey, never>} state
+ * @returns {RegulateType}
  */
 export default function regulate ({
   HAS_ALPHA = false,
@@ -24,6 +25,7 @@ export default function regulate ({
   WAS_ALPHA_DEFINED = false,
   WAS_OMEGA_DEFINED = false
 } = {}) {
+  log('regulate')
   if (
     HAS_ALPHA
   ) {
