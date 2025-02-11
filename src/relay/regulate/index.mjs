@@ -1,5 +1,5 @@
 /**
- * @typedef {RelayTypes.InitiateType} InitiateType
+ * @typedef {RelayTypes.RegulateParamsType} RegulateParamsType
  * @typedef {RelayTypes.RegulateType} RegulateType
  */
 
@@ -14,7 +14,7 @@ const log = debug('shinkansen-relay')
 log('`shinkansen` is awake')
 
 /**
- * @param {InitiateType | Record<PropertyKey, never>} state
+ * @param {RegulateParamsType} params
  * @returns {RegulateType}
  */
 export default function regulate ({
@@ -26,6 +26,7 @@ export default function regulate ({
   WAS_OMEGA_DEFINED = false
 } = {}) {
   log('regulate')
+
   if (
     HAS_ALPHA
   ) {

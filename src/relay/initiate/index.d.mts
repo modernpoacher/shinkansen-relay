@@ -1,5 +1,5 @@
 declare module '#relay/relay/initiate' {
-  export function initiate (relay: { was: Record<PropertyKey, string>, now: Record<PropertyKey, string> }): RelayTypes.StateType
+  export function initiate (params: RelayTypes.InitiateParamsType): RelayTypes.InitiateType
 }
 
 declare module 'shinkansen-relay/relay/initiate' {
