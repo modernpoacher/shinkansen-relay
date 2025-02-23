@@ -8,7 +8,7 @@ declare global {
     }
 
     export interface InitiateParamsType {
-      was?: Record<PropertyKey, string> | Record<PropertyKey, never>,
+      was?: Record<PropertyKey, string> | Record<PropertyKey, never>
       now?: Record<PropertyKey, string> | Record<PropertyKey, never>
     }
 
