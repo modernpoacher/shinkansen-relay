@@ -9,27 +9,13 @@
     "strict": true,
     "strictNullChecks": true,
     "isolatedModules": true,
-    "baseUrl": ".",
-    "paths": {
-      "#relay": [
-        "src/index.mjs"
-      ],
-      "#relay/relay": [
-        "src/relay/index.mjs"
-      ],
-      "#relay/relay/initiate": [
-        "src/relay/initiate/index.mjs"
-      ],
-      "#relay/relay/regulate": [
-        "src/relay/regulate/index.mjs"
-      ]
-    }
+    "baseUrl": "."
   },
   "include": [
     ".",
     "src/**/*"
   ],
   "exclude": [
-    "test"
+    "test/**/*"
   ]
 }
