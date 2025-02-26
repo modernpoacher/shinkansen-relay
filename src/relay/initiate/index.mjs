@@ -17,7 +17,10 @@ log('`shinkansen` is awake')
  * @param {InitiateParamsType} params
  * @returns {InitiateType}
  */
-export default function initiate ({ now = {}, was = {} } = {}) {
+export default function initiate ({
+  now = {},
+  was = {}
+} = {}) {
   log('initiate')
 
   const {
