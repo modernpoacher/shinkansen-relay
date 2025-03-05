@@ -6,7 +6,27 @@
     "checkJs": true,
     "noEmit": true,
     "strict": true,
-    "isolatedModules": true,
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "paths": {
+      "#relay": [
+        "src/index.cjs",
+        "src/index.mjs"
+      ],
+      "#relay/relay": [
+        "src/relay/index.mjs"
+      ],
+      "#relay/relay/initiate": [
+        "src/relay/initiate/index.mjs"
+      ],
+      "#relay/relay/regulate": [
+        "src/relay/regulate/index.mjs"
+      ]
+    }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "test/**/*"
+  ]
 }

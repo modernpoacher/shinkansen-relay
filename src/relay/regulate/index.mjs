@@ -1,6 +1,6 @@
 /**
- * @typedef {RelayTypes.RegulateParamsType} RegulateParamsType
- * @typedef {RelayTypes.RegulateType} RegulateType
+ *  @typedef {RelayTypes.RegulateParamsType} RegulateParamsType
+ *  @typedef {RelayTypes.RegulateType} RegulateType
  */
 
 import debug from 'debug'
@@ -14,8 +14,8 @@ const log = debug('shinkansen-relay')
 log('`shinkansen` is awake')
 
 /**
- * @param {RegulateParamsType} params
- * @returns {RegulateType}
+ *  @param {RegulateParamsType} params
+ *  @returns {RegulateType}
  */
 export default function regulate ({
   HAS_ALPHA = false,

@@ -1,1 +1,3 @@
-export { default as Relay } from '#relay/relay'
+export {
+  default as Relay
+} from '#relay/relay'

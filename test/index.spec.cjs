@@ -1,10 +1,10 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-expect-error
+} = require('chai')
 
-import {
+const {
   Relay
-} from '#relay'
+} = require('#relay')
 
 describe('#relay', () => {
   it('is a function', () => {

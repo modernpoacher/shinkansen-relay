@@ -1,8 +1,8 @@
 import debug from 'debug'
 
-import initiate from '#relay/relay/initiate'
+import initiate from './initiate/index.mjs'
 
-import regulate from '#relay/relay/regulate'
+import regulate from './regulate/index.mjs'
 
 const log = debug('shinkansen-relay')
 

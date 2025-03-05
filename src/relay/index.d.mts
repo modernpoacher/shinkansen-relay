@@ -1,5 +1,9 @@
-export default class Relay { // eslint-disable-line @typescript-eslint/no-extraneous-class -- Static class
-  static initiate (params?: RelayTypes.InitiateParamsType): RelayTypes.InitiateType
+import '#relay/relay/initiate'
 
-  static regulate (params?: RelayTypes.RegulateParamsType): RelayTypes.RegulateType
+import '#relay/relay/regulate'
+
+export default class Relay { // eslint-disable-line @typescript-eslint/no-extraneous-class -- Static class
+  static initiate: RelayTypes.Initiate
+
+  static regulate: RelayTypes.Regulate
 }

@@ -19,7 +19,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=23.0.0"
+    "node": ">=22.11.0"
   },
   "repository": {
     "type": "git",
@@ -60,7 +60,10 @@
     "shinkansen-signals": "1.1.187"
   },
   "imports": {
-    "#relay": "./src/index.mjs",
+    "#relay": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.mjs"
+    },
     "#relay/relay": "./src/relay/index.mjs",
     "#relay/relay/initiate": "./src/relay/initiate/index.mjs",
     "#relay/relay/regulate": "./src/relay/regulate/index.mjs"

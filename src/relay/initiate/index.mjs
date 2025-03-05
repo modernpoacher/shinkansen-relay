@@ -1,6 +1,6 @@
 /**
- * @typedef {RelayTypes.InitiateParamsType} InitiateParamsType
- * @typedef {RelayTypes.InitiateType} InitiateType
+ *  @typedef {RelayTypes.InitiateParamsType} InitiateParamsType
+ *  @typedef {RelayTypes.InitiateType} InitiateType
  */
 
 import debug from 'debug'
@@ -14,8 +14,8 @@ const log = debug('shinkansen-relay')
 log('`shinkansen` is awake')
 
 /**
- * @param {InitiateParamsType} params
- * @returns {InitiateType}
+ *  @param {InitiateParamsType} params
+ *  @returns {InitiateType}
  */
 export default function initiate ({
   now = {},
@@ -28,19 +28,19 @@ export default function initiate ({
     OMEGA
   } = Signals
 
-  const alpha = Reflect.get(now, ALPHA)
-  const omega = Reflect.get(now, OMEGA)
+  const alpha = now[ALPHA] // Reflect.get(now, ALPHA)
+  const omega = now[OMEGA] // Reflect.get(now, OMEGA)
 
   const HAS_ALPHA = !!alpha
   const HAS_OMEGA = !!omega
 
   log(now, HAS_ALPHA, HAS_OMEGA)
 
-  const HAS_ALPHA_CHANGED = Reflect.get(was, ALPHA) !== alpha
-  const HAS_OMEGA_CHANGED = Reflect.get(was, OMEGA) !== omega
+  const HAS_ALPHA_CHANGED = was[ALPHA] !== alpha // Reflect.get(was, ALPHA) !== alpha
+  const HAS_OMEGA_CHANGED = was[OMEGA] !== omega // Reflect.get(was, OMEGA) !== omega
 
-  const WAS_ALPHA_DEFINED = Reflect.has(was, ALPHA)
-  const WAS_OMEGA_DEFINED = Reflect.has(was, OMEGA)
+  const WAS_ALPHA_DEFINED = ALPHA in was // Reflect.has(was, ALPHA)
+  const WAS_OMEGA_DEFINED = OMEGA in was // Reflect.has(was, OMEGA)
 
   return {
     HAS_ALPHA,

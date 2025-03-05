@@ -13,6 +13,10 @@ declare global {
     }
 
     export type RegulateParamsType = InitiateType | Record<PropertyKey, never>
+
+    export type Initiate = (params?: InitiateParamsType) => InitiateType
+
+    export type Regulate = (params?: RegulateParamsType) => RegulateType
   }
 }
 
