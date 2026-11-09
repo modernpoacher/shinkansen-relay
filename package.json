@@ -75,5 +75,8 @@
     "./relay": "./src/relay/index.mjs",
     "./relay/initiate": "./src/relay/initiate/index.mjs",
     "./relay/regulate": "./src/relay/regulate/index.mjs"
+  },
+  "allowScripts": {
+    "core-js@3.51.0": true
   }
 }
