@@ -20,6 +20,9 @@ export default [
       }
     }
   }),
+  /**
+   *  Standard config for `mjs` and `mts` files
+   */
   standard({
     files: [
       'src/**/*.{mjs,cjs,mts,cts}'
@@ -53,7 +56,8 @@ export default [
     ],
     languageOptions: {
       globals: {
-        ...globals.node
+        ...globals.node,
+        RelayTypes: 'readonly'
       }
     }
   }),
